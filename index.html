@@ -465,6 +465,94 @@
     font-weight: 500;
   }
 
+  /* ─── WORK EXPERIENCE ─── */
+  #experience {
+    background: var(--light);
+  }
+
+  .experience-timeline {
+    margin-top: 30px;
+  }
+
+  .exp-card {
+    background: var(--white);
+    padding: 36px;
+    border-left: 4px solid var(--accent);
+    position: relative;
+    transition: all 0.3s;
+    margin-bottom: 30px;
+  }
+
+  .exp-card:hover {
+    transform: translateX(6px);
+    box-shadow: 0 8px 32px rgba(13,27,42,0.1);
+  }
+
+  .exp-header {
+    margin-bottom: 24px;
+  }
+
+  .exp-period {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--navy);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 6px 14px;
+    border-radius: 2px;
+    margin-bottom: 14px;
+  }
+
+  .exp-role {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  .exp-company {
+    font-size: 1rem;
+    color: var(--blue);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .exp-location {
+    font-size: 0.85rem;
+    color: var(--gray);
+    font-style: italic;
+  }
+
+  .exp-responsibilities {
+    list-style: none;
+    padding: 0;
+  }
+
+  .exp-responsibilities li {
+    font-size: 0.9rem;
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 14px;
+    padding-left: 28px;
+    position: relative;
+  }
+
+  .exp-responsibilities li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 0.9rem;
+  }
+
+  .exp-responsibilities strong {
+    color: var(--navy);
+    font-weight: 600;
+  }
+
   /* ─── CERTIFICATIONS ─── */
   #certifications { background: var(--white); }
 
@@ -655,6 +743,7 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#achievements">Achievements</a></li>
     <li><a href="#certifications">Certifications</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -833,6 +922,39 @@
           <span class="skill-tag">Teamwork</span>
           <span class="skill-tag">Decision-Making</span>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Work Experience</div>
+    <h2 class="section-title reveal">Professional <span style="color:var(--accent)">Journey</span></h2>
+    <div class="section-line reveal"></div>
+    <div class="experience-timeline">
+      <div class="exp-card reveal">
+        <div class="exp-header">
+          <span class="exp-period">May 2024 – Present</span>
+          <h3 class="exp-role">Franchise Owner & Network Technician</h3>
+          <div class="exp-company">BSNL Local Distribution Franchise</div>
+          <div class="exp-location">Thrissur, Kerala</div>
+        </div>
+        <ul class="exp-responsibilities">
+          <li>
+            <strong>Business Operations & Client Management:</strong> Managed daily operations for a local internet service and cable distribution business, overseeing service delivery, client onboarding, and technical troubleshooting for 480 active subscribers.
+          </li>
+          <li>
+            <strong>Network Infrastructure Configuration:</strong> Configured and maintained core fiber-optic network infrastructure, including Netlink and Genexis OLT hardware, VLAN tagging, and ODR settings to ensure optimal network performance and high-speed connectivity.
+          </li>
+          <li>
+            <strong>Technical Troubleshooting:</strong> Monitored network health and proactively resolved client connectivity issues using remote management tools (e.g., retrieving MAC address tables via PuTTY), minimizing network downtime.
+          </li>
+          <li>
+            <strong>Hardware Installation & Maintenance:</strong> Executed physical fiber-optic network installations and managed hardware components, including 90/10 fiber splitters, demonstrating strong hands-on technical proficiency and risk awareness.
+          </li>
+        </ul>
       </div>
     </div>
   </div>
